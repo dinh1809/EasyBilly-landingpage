@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EasyBilly - Học tiếng Anh bớt ngại</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "surface-container-highest": "#cfe8de",
+                "primary-container": "#006d3f",
+                "surface-container-high": "#d5eee4",
+                "secondary-fixed-dim": "#84d5c8",
+                "inverse-primary": "#80d9a0",
+                "on-error": "#ffffff",
+                "tertiary": "#5b4300",
+                "on-surface-variant": "#3f4941",
+                "secondary": "#016a60",
+                "primary": "#00522e",
+                "on-primary-fixed-variant": "#00522e",
+                "tertiary-fixed-dim": "#f4bf34",
+                "error-container": "#ffdad6",
+                "on-primary": "#ffffff",
+                "on-secondary-container": "#117166",
+                "background": "#e6fff5",
+                "on-primary-container": "#92ecb2",
+                "error": "#ba1a1a",
+                "inverse-on-surface": "#ddf6ec",
+                "secondary-container": "#9ff2e4",
+                "on-primary-fixed": "#00210f",
+                "surface-dim": "#c7dfd6",
+                "on-error-container": "#93000a",
+                "surface-container": "#dbf3ea",
+                "surface-tint": "#006d3f",
+                "tertiary-fixed": "#ffdf9c",
+                "surface-container-low": "#e0f9ef",
+                "surface": "#e6fff5",
+                "primary-fixed": "#9cf6bb",
+                "inverse-surface": "#1f342e",
+                "primary-fixed-dim": "#80d9a0",
+                "outline": "#6f7a70",
+                "surface-container-lowest": "#ffffff",
+                "on-tertiary-fixed-variant": "#5b4300",
+                "outline-variant": "#bec9be",
+                "surface-bright": "#e6fff5",
+                "on-tertiary": "#ffffff",
+                "on-tertiary-container": "#ffd371",
+                "on-secondary-fixed-variant": "#005048",
+                "on-background": "#091f1a",
+                "tertiary-container": "#785a00",
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed": "#251a00",
+                "on-surface": "#091f1a",
+                "on-secondary-fixed": "#00201c",
+                "surface-variant": "#cfe8de",
+                "secondary-fixed": "#9ff2e4"
+              },
+              fontFamily: {
+                "headline": ["Be Vietnam Pro"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: #e6fff5; color: #091f1a; }
+        h1, h2, h3 { font-family: 'Be Vietnam Pro', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #00522e 0%, #006d3f 100%);
+        }
+    </style>
+</head>
+<body class="selection:bg-primary-fixed selection:text-primary overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 no-border bg-gradient-to-b from-[#DBF3EA] to-transparent bg-[#E6FFF5]/80 dark:bg-emerald-950/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-emerald-900 dark:text-emerald-50 font-['Be_Vietnam_Pro'] tracking-tight">EasyBilly</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-emerald-800/70 dark:text-emerald-200/70 hover:text-emerald-900 dark:hover:text-emerald-50 transition-colors font-['Be_Vietnam_Pro'] font-bold tracking-tight" href="#">Sứ mệnh</a>
+<a class="text-emerald-800/70 dark:text-emerald-200/70 hover:text-emerald-900 dark:hover:text-emerald-50 transition-colors font-['Be_Vietnam_Pro'] font-bold tracking-tight" href="#">Lộ trình</a>
+<a class="text-emerald-800/70 dark:text-emerald-200/70 hover:text-emerald-900 dark:hover:text-emerald-50 transition-colors font-['Be_Vietnam_Pro'] font-bold tracking-tight" href="#">Học viên</a>
+<a class="text-emerald-800/70 dark:text-emerald-200/70 hover:text-emerald-900 dark:hover:text-emerald-50 transition-colors font-['Be_Vietnam_Pro'] font-bold tracking-tight" href="#">Hỏi đáp</a>
+</nav>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold hover:opacity-80 transition-all duration-300 active:scale-95">Giữ chỗ</button>
+</div>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-[60%_40%] gap-12 items-center mb-32">
+<div class="space-y-8">
+<h1 class="text-6xl md:text-8xl font-black text-primary leading-[1.1] tracking-tighter">
+                    Biết rồi.<br/>Giờ nói thử xem.
+                </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-xl leading-relaxed">
+                    Nếu bạn có gốc mà vẫn ngại mở miệng, EasyBilly giúp bạn tập nói mỗi ngày theo cách nhẹ đầu hơn. Nói từng chút, đỡ run từng chút.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-xl text-xl font-bold hero-gradient hover:shadow-lg transition-all active:scale-95">Cho tôi giữ chỗ</button>
+<div class="flex items-center gap-3 px-6 py-4 rounded-xl surface-container border-none text-primary font-medium">
+<span class="material-symbols-outlined" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+                        Xem cách Billy hoạt động
+                    </div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-xl surface-container-highest overflow-hidden relative group">
+<div class="absolute inset-8 glass-card rounded-lg flex flex-col justify-between p-8 z-10 transform translate-x-4 -translate-y-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">B</div>
+<div>
+<div class="font-bold text-lg">Billy the Editor</div>
+<div class="text-sm opacity-70 italic">Đang lắng nghe...</div>
+</div>
+</div>
+<div class="flex items-end gap-1 h-24 pb-4">
+<div class="w-2 bg-primary rounded-full h-8"></div>
+<div class="w-2 bg-primary rounded-full h-16"></div>
+<div class="w-2 bg-primary rounded-full h-12"></div>
+<div class="w-2 bg-primary rounded-full h-20"></div>
+<div class="w-2 bg-primary rounded-full h-10"></div>
+<div class="w-2 bg-primary rounded-full h-24"></div>
+<div class="w-2 bg-primary rounded-full h-14"></div>
+</div>
+</div>
+<img class="w-full h-full object-cover grayscale opacity-40 group-hover:scale-110 transition-transform duration-700" data-alt="Abstract emerald green aesthetic background with organic shapes and soft light textures, premium editorial feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqszZnwmO45NN1w955uHzuhHT0vpNZvKlbmev_f_iw2wFAjN6j3mGYnVk0NGUCSrMvPCps5wUAuvG1WD4DqD_NcxcCmZiWVJ3X7hd3L1sQf1u-qZhT44gV3GOGKyACiXHtWUS9vGg_9AoYevWTV8Xr7sCh2f2bHUrO4QdTG-4pBEaIAHSGyDQO4aIoA3GXj7Th43ZvlSyUNuxklN9X5__6APA7CABltvfMe8g22r52KTNdA8A6tsdXP6temT-HSylhRh2PMao3gLU"/>
+</div>
+</div>
+</section>
+<!-- Soft Trust -->
+<section class="max-w-4xl mx-auto px-8 text-center mb-40">
+<p class="text-2xl md:text-3xl font-headline font-bold text-primary/60 italic leading-relaxed">
+                "Học ngắn, dễ theo. Tình huống quen thuộc. <br class="hidden md:block"/> Thiết kế cho người ngại mở miệng."
+            </p>
+</section>
+<!-- Pain Points -->
+<section class="max-w-7xl mx-auto px-8 mb-40">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="surface-container-low p-12 rounded-xl flex flex-col justify-between h-80 transform -rotate-1 hover:rotate-0 transition-transform">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="cloud_off">cloud_off</span>
+<h3 class="text-2xl font-bold leading-snug">Thuộc công thức từ lâu. Tới lúc cần dùng thì não tắt.</h3>
+</div>
+<div class="surface-container-high p-12 rounded-xl flex flex-col justify-between h-80 transform translate-y-8 hover:translate-y-4 transition-transform">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="voice_over_off">voice_over_off</span>
+<h3 class="text-2xl font-bold leading-snug">Trong đầu câu ổn lắm. Ra miệng thì... à... ừm...</h3>
+</div>
+<div class="surface-container-highest p-12 rounded-xl flex flex-col justify-between h-80 transform rotate-2 hover:rotate-0 transition-transform">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="distance">distance</span>
+<h3 class="text-2xl font-bold leading-snug">Muốn giao tiếp tốt hơn thật. Chỉ là chưa tìm được cách luyện nào gần đời thật.</h3>
+</div>
+</div>
+</section>
+<!-- Normalizing Shame -->
+<section class="bg-primary-container text-on-primary-container py-32 mb-40 overflow-hidden relative">
+<div class="max-w-5xl mx-auto px-8 relative z-10">
+<h2 class="text-5xl md:text-7xl font-black mb-12 leading-tight">Điều này bình thường hơn bạn nghĩ.</h2>
+<p class="text-2xl md:text-4xl font-light leading-relaxed max-w-3xl opacity-90">
+                    Rất nhiều người không yêu tiếng Anh. Họ chỉ thiếu một cách tập khiến mình <span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-lg font-bold">dám nói thường xuyên hơn</span>.
+                </p>
+</div>
+<div class="absolute -right-20 -bottom-20 opacity-10">
+<span class="material-symbols-outlined text-[400px]" data-icon="sentiment_satisfied">sentiment_satisfied</span>
+</div>
+</section>
+<!-- How it Works -->
+<section class="max-w-7xl mx-auto px-8 mb-40">
+<div class="mb-20 text-center md:text-left">
+<h2 class="text-4xl md:text-6xl font-black text-primary mb-4">Cách Billy cùng bạn tập.</h2>
+<div class="h-2 w-32 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6 group">
+<div class="text-8xl font-black text-primary/10 group-hover:text-primary/20 transition-colors">01</div>
+<h4 class="text-2xl font-bold">Chọn tình huống</h4>
+<p class="text-on-surface-variant leading-relaxed">Từ order cafe đến phỏng vấn, chọn những gì bạn thực sự sẽ gặp.</p>
+</div>
+<div class="space-y-6 group mt-12 md:mt-0">
+<div class="text-8xl font-black text-primary/10 group-hover:text-primary/20 transition-colors">02</div>
+<h4 class="text-2xl font-bold">Nghe, nói, phản xạ</h4>
+<p class="text-on-surface-variant leading-relaxed">Billy đưa ra câu hỏi, bạn thu âm câu trả lời theo cách tự nhiên nhất.</p>
+</div>
+<div class="space-y-6 group mt-12 md:mt-0">
+<div class="text-8xl font-black text-primary/10 group-hover:text-primary/20 transition-colors">03</div>
+<h4 class="text-2xl font-bold">Ôn lại đúng lúc</h4>
+<p class="text-on-surface-variant leading-relaxed">Thuật toán lặp lại ngắt quãng giúp bạn không quên những gì vừa nói.</p>
+</div>
+<div class="space-y-6 group mt-12 md:mt-0">
+<div class="text-8xl font-black text-primary/10 group-hover:text-primary/20 transition-colors">04</div>
+<h4 class="text-2xl font-bold">Thay mình mỗi ngày</h4>
+<p class="text-on-surface-variant leading-relaxed">Từng chút một, cảm giác run rẩy khi mở miệng sẽ biến mất.</p>
+</div>
+</div>
+</section>
+<!-- Product Showcase (Bento Grid) -->
+<section class="max-w-7xl mx-auto px-8 mb-40">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto md:h-[800px]">
+<!-- Card 1 -->
+<div class="md:col-span-8 surface-container rounded-xl p-12 overflow-hidden relative group">
+<div class="relative z-10 max-w-sm">
+<span class="bg-primary text-on-primary text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-6 inline-block">Mới nhất</span>
+<h3 class="text-4xl font-black mb-4">Học ngay: Tại quán cafe</h3>
+<p class="text-lg opacity-70 mb-8">Tập cách hỏi menu và thanh toán mà không cần 'body language'.</p>
+<button class="bg-white text-primary px-6 py-3 rounded-full font-bold shadow-sm active:scale-95 transition-transform">Thử ngay</button>
+</div>
+<img class="absolute right-0 top-0 h-full w-1/2 object-cover opacity-80 mix-blend-multiply transition-transform duration-700 group-hover:scale-105" data-alt="Interior of a modern minimalist cafe with warm lighting and wooden furniture, aesthetic editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1IeVCg7DTK05QSzjIZka5BfKpzjlsaTUwpeaWtCeSUU2lX4IjwEwax81uVKlzgQRYr4ucPxlXo0peC7OS53iD7HS7T4EKl2kikgGuJQ9kWVSoEX8MR8wux2Z97qulkxWAMlb3z-pqPCnW8ytHLoWturo41TvZqG5U9gIppXsWeGiova0gUT9mPdM5lMRKR6kqCdNGm86Chm-RSTo3phX-XaJGIE7O4yM3qvskC4O-IZ7OVJPsncsfSIaUEbu1eC8amy41PeQxd8A"/>
+</div>
+<!-- Card 2 -->
+<div class="md:col-span-4 surface-container-high rounded-xl p-10 flex flex-col justify-between group">
+<div>
+<h3 class="text-3xl font-black mb-4">Ôn nhanh 5 phút</h3>
+<p class="text-on-surface-variant">Tranh thủ lúc đợi xe bus hoặc giờ nghỉ trưa.</p>
+</div>
+<div class="flex justify-center py-8">
+<div class="w-24 h-24 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-2xl animate-pulse cursor-pointer">
+<span class="material-symbols-outlined text-4xl" data-icon="mic" style="font-variation-settings: 'FILL' 1;">mic</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="md:col-span-5 surface-container-highest rounded-xl p-10 flex flex-col justify-between overflow-hidden relative">
+<div class="relative z-10">
+<h3 class="text-3xl font-black mb-4">Billy sửa bài</h3>
+<p class="text-on-surface-variant mb-6">Không chỉ đúng hay sai, Billy gợi ý cách nói tự nhiên hơn.</p>
+<div class="bg-white/80 p-6 rounded-lg space-y-4">
+<div class="text-sm opacity-50">Bạn nói:</div>
+<div class="font-medium text-error line-through">"I want to drink a coffee."</div>
+<div class="text-sm opacity-50 border-t pt-4">Nên nói:</div>
+<div class="font-bold text-primary">"Can I get a latte, please?"</div>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="md:col-span-7 bg-tertiary-fixed rounded-xl p-10 flex items-center gap-8 group">
+<div class="flex-1">
+<h3 class="text-4xl font-black text-on-tertiary-fixed mb-4">Lộ trình cá nhân hóa</h3>
+<p class="text-on-tertiary-fixed-variant text-lg">Hệ thống tự nhận diện những từ bạn hay khựng để nhắc lại vào bài sau.</p>
+</div>
+<div class="hidden md:block w-48 h-48 bg-white/20 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform">
+<span class="material-symbols-outlined text-8xl text-on-tertiary-fixed/40" data-icon="auto_awesome">auto_awesome</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Transformation -->
+<section class="max-w-7xl mx-auto px-8 mb-40 text-center">
+<h2 class="text-4xl md:text-6xl font-black text-primary mb-20 max-w-4xl mx-auto">Một thời gian nữa, bạn sẽ khác ở những lúc rất nhỏ.</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6">
+<div class="aspect-video rounded-xl bg-surface-dim overflow-hidden">
+<img class="w-full h-full object-cover grayscale" data-alt="Close up of hands holding a menu in a sunlit restaurant, high-end editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBub6_LXIIFE8eeX5yY4JF3ORnWNUKQ2NADofQ00sAbTwiw8hWlEFSUbjTO-wTiSiWkGFYApKvuR9Iaw2-tvb4FqV7FHwilM4vDMPx2QhvUsyA6vSjleDG7irSLtJcqC2G7SZBd_N0RgfQdgL7uZ6wOusLkUiPBp0OJeJ0_s54QGntXM7lNB4pdozokRF-wf5a4LFtI82AI1lhT4PZ1Tmr-A2t1UTrF05nduLXHpm4vUAwGxx13Q7EZnsu6C7Zg6wCNuGMKzxtIdkE"/>
+</div>
+<h4 class="text-2xl font-bold italic">"Gọi món đỡ lúng túng"</h4>
+</div>
+<div class="space-y-6 transform translate-y-12">
+<div class="aspect-video rounded-xl bg-surface-dim overflow-hidden">
+<img class="w-full h-full object-cover grayscale" data-alt="A person looking at a city map on a street corner, blurred city background, artistic style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7rOqeOfAD1njAkpLtNo1ODU6YSHEfsrMjminOxUZ7hu7H8N02k8vAb30HtXUWx7QhS7oVDGB8dQzaUuiHgL6qliIJ8Uk0H5L4lsf9zcj-APWKXutTAA0QXHtsRJS-FrUgPWlK_yCluPaLBIF-DXrO_tjXZr64Ho5wFgNFt71qwndMH4AUyjdquJ-lCngPf1LRoMntfZHVvg4pOXrmfT2stWDWRh2BfUb3posB5gnTaheaFhBv8celswfRkX8A79Y1cykf-hyOEPk"/>
+</div>
+<h4 class="text-2xl font-bold italic">"Hỏi đường bình tĩnh hơn"</h4>
+</div>
+<div class="space-y-6">
+<div class="aspect-video rounded-xl bg-surface-dim overflow-hidden">
+<img class="w-full h-full object-cover grayscale" data-alt="A group of people laughing together in a modern bright lounge, soft focus, candid moment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAE0EG_AXA3-tzfO9lTKt5S0eHBMStBZJ3t2yHuqZC_l3JyqCnCQp5_9ncs4DvOXaBbzLeTTFNMMs36qAPgJTMbJgfJOOAHWQDvo9ZYV2kRKKFWgv9Bwcx-m_L4p30jl-taYpA9Xs8uCpYCJD96DksDWRFxAKul6vbrsnW8awYxEhjb0HSXusUfiJGmeAwKE966sRTrmbltPQOnOqFlgRd7X_Rw09EZKK0AQZ4Y-0WBTeuZikNpptF_Bw6DgjiIK1U-mheXqqVIGI"/>
+</div>
+<h4 class="text-2xl font-bold italic">"Không chỉ cười rồi im lặng"</h4>
+</div>
+</div>
+</section>
+<!-- Audience -->
+<section class="max-w-7xl mx-auto px-8 mb-40">
+<div class="surface-container rounded-[3rem] p-16 md:p-24 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h2 class="text-4xl font-black mb-8">Bạn có thấy mình ở đây?</h2>
+<div class="flex flex-wrap gap-4">
+<span class="px-8 py-4 rounded-full bg-white text-primary font-bold shadow-sm hover:bg-primary hover:text-white transition-colors cursor-default">Học rồi mà khựng</span>
+<span class="px-8 py-4 rounded-full bg-white text-primary font-bold shadow-sm hover:bg-primary hover:text-white transition-colors cursor-default">Ngại giao tiếp</span>
+<span class="px-8 py-4 rounded-full bg-white text-primary font-bold shadow-sm hover:bg-primary hover:text-white transition-colors cursor-default">Bận rộn</span>
+<span class="px-8 py-4 rounded-full bg-white text-primary font-bold shadow-sm hover:bg-primary hover:text-white transition-colors cursor-default">Người lớn tuổi</span>
+</div>
+</div>
+<div class="flex-1 text-on-surface-variant text-xl leading-relaxed italic">
+                    "Chúng tôi không dạy bạn trở thành giáo sư. Chúng tôi giúp bạn trở thành người dám nói tiếng Anh để phục vụ chính cuộc sống của mình."
+                </div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="max-w-4xl mx-auto px-8 mb-40">
+<h2 class="text-4xl font-black text-center mb-16">Những điều bạn thường băn khoăn</h2>
+<div class="space-y-6">
+<details class="group surface-container-low rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none font-bold text-xl">
+                        Tôi rất nhát, sợ Billy chê
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-8 pt-0 text-on-surface-variant leading-relaxed">
+                        Billy được thiết kế để làm người đồng hành, không phải giám khảo. Mọi góp ý đều mang tính khích lệ và bí mật. Không ai nghe thấy bạn nói ngoài Billy.
+                    </div>
+</details>
+<details class="group surface-container-low rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none font-bold text-xl">
+                        Lịch trình của tôi rất bận
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-8 pt-0 text-on-surface-variant leading-relaxed">
+                        Mỗi bài tập chỉ kéo dài 5-10 phút. Bạn có thể tập bất cứ khi nào có điện thoại trong tay.
+                    </div>
+</details>
+<details class="group surface-container-low rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none font-bold text-xl">
+                        Người lớn tuổi có học được không?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-8 pt-0 text-on-surface-variant leading-relaxed">
+                        Giao diện của EasyBilly cực kỳ tối giản và trực quan. Chữ to, rõ ràng và không có những tính năng gây nhiễu.
+                    </div>
+</details>
+<details class="group surface-container-low rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none font-bold text-xl">
+                        Khi nào thì EasyBilly ra mắt?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-8 pt-0 text-on-surface-variant leading-relaxed">
+                        Chúng tôi đang trong giai đoạn hoàn thiện cuối cùng. Nếu bạn để lại thông tin trong danh sách chờ, bạn sẽ là những người đầu tiên được trải nghiệm bản Beta.
+                    </div>
+</details>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-7xl mx-auto px-8 mb-40">
+<div class="bg-primary p-16 md:p-32 rounded-[4rem] text-center text-on-primary relative overflow-hidden">
+<div class="relative z-10 space-y-12">
+<h2 class="text-4xl md:text-7xl font-black leading-tight max-w-4xl mx-auto">Nếu bạn cũng muốn đỡ ngại hơn từng chút một, vào danh sách chờ nhé.</h2>
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-12 py-6 rounded-xl text-2xl font-bold hover:scale-105 transition-transform active:scale-95 shadow-2xl">Cho tôi giữ chỗ</button>
+</div>
+<!-- Decorative background patterns -->
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+<div class="absolute top-10 right-10 w-64 h-64 border-8 border-white rounded-full"></div>
+<div class="absolute -bottom-20 -left-20 w-96 h-96 border-8 border-white rounded-full"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-[#DBF3EA] dark:bg-emerald-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-xl font-bold text-emerald-900 dark:text-emerald-50 mb-4 font-['Be_Vietnam_Pro']">EasyBilly</div>
+<p class="text-emerald-800/60 dark:text-emerald-200/60 font-['Be_Vietnam_Pro'] leading-relaxed">© 2024 EasyBilly. Nói trước cho quen. Hay tính sau.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-emerald-800/60 dark:text-emerald-200/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" href="#">Điều khoản</a>
+<a class="text-emerald-800/60 dark:text-emerald-200/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" href="#">Bảo mật</a>
+<a class="text-emerald-800/60 dark:text-emerald-200/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" href="#">Liên hệ</a>
+<a class="text-emerald-800/60 dark:text-emerald-200/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" href="#">Facebook</a>
+<a class="text-emerald-800/60 dark:text-emerald-200/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+</body></html>
