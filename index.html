@@ -6,7 +6,7 @@
     <title>EasyBilly | Biết rồi. Giờ nói thử xem.</title>
     <meta
       name="description"
-      content="EasyBilly là app luyện nói dành cho người còn ngại mở miệng. Tập nói mỗi ngày theo cách nhẹ đầu hơn, dễ theo hơn, và gần với đời thật hơn."
+      content="EasyBilly là app luyện nói dành cho người ngại giao tiếp. Với các tình huống thực tế và bài luyện tập ngắn mỗi ngày, bạn sẽ dần tự tin nói từng chút một."
     />
     <meta
       name="keywords"
@@ -15,7 +15,7 @@
     <meta property="og:title" content="EasyBilly | Biết rồi. Giờ nói thử xem." />
     <meta
       property="og:description"
-      content="Tập nói mỗi ngày theo cách đỡ áp lực hơn. Nói từng chút, đỡ run từng chút."
+      content="EasyBilly là app luyện nói dành cho người ngại giao tiếp. Với các tình huống thực tế và bài luyện tập ngắn mỗi ngày, bạn sẽ dần tự tin nói từng chút một."
     />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#E6FFF5" />
@@ -113,10 +113,24 @@
           radial-gradient(circle at bottom left, rgba(117, 248, 230, 0.14), transparent 22%);
       }
       .editorial-grid {
+        position: relative;
         background-image:
           linear-gradient(rgba(0, 109, 63, 0.04) 1px, transparent 1px),
           linear-gradient(90deg, rgba(0, 109, 63, 0.04) 1px, transparent 1px);
         background-size: 28px 28px;
+      }
+      .editorial-grid::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        border-radius: inherit;
+        background: radial-gradient(
+          500px circle at var(--mouse-x, -9999px) var(--mouse-y, -9999px),
+          rgba(0, 109, 63, 0.10),
+          transparent 60%
+        );
+        z-index: 0;
       }
       .speech-bars span {
         display: block;
@@ -221,7 +235,7 @@
             href="#waitlist"
             class="primary-gradient min-h-[44px] rounded-full px-5 py-3 text-sm font-bold text-white shadow-ambient transition duration-200 hover:-translate-y-0.5 hover:shadow-float focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
-            Giữ chỗ
+            Bắt đầu tập luyện
           </a>
           <!-- Mobile hamburger -->
           <button
@@ -247,7 +261,7 @@
         <a href="#cach-hoc" class="mobile-link font-headline text-lg font-bold text-primary-strong transition hover:text-primary">Lộ trình</a>
         <a href="#ai-hop" class="mobile-link font-headline text-lg font-bold text-primary-strong transition hover:text-primary">Học viên</a>
         <a href="#faq" class="mobile-link font-headline text-lg font-bold text-primary-strong transition hover:text-primary">Hỏi đáp</a>
-        <a href="#waitlist" class="mobile-link primary-gradient mt-4 rounded-full px-6 py-4 text-center text-base font-bold text-white shadow-ambient">Cho tôi giữ chỗ</a>
+        <a href="#waitlist" class="mobile-link primary-gradient mt-4 rounded-full px-6 py-4 text-center text-base font-bold text-white shadow-ambient">Bắt đầu tập luyện</a>
       </div>
     </div>
 
@@ -262,13 +276,13 @@
             <!-- Left column -->
             <div class="relative z-10 space-y-8">
               <div class="reveal space-y-5">
-                <p class="font-headline text-sm font-bold uppercase tracking-[0.22em] text-primary/75">EasyBilly | Luyện nói theo cách đỡ áp lực hơn</p>
+                <p class="font-headline text-sm font-bold uppercase tracking-[0.22em] text-primary/75">EasyBilly | Luyện giao tiếp theo cách nhẹ nhàng hơn</p>
                 <h1 class="headline-tight max-w-3xl font-headline text-5xl font-black text-primary-strong sm:text-6xl lg:text-8xl">
-                  Biết rồi.<br />
-                  Giờ nói thử xem.
+                  Dám nghĩ…<br />
+                  nhưng chưa dám nói?
                 </h1>
                 <p class="max-w-xl text-lg leading-8 text-body-soft sm:text-xl">
-                  Nếu bạn có gốc mà vẫn ngại mở miệng, EasyBilly giúp bạn tập nói mỗi ngày theo cách nhẹ đầu hơn. Nói từng chút, đỡ run từng chút.
+                  Nếu bạn có vốn từ và ngữ pháp mà vẫn ngại mở miệng, EasyBilly giúp bạn luyện nói mỗi ngày qua những tình huống đời thật, dễ bắt đầu và không áp lực.
                 </p>
               </div>
 
@@ -277,7 +291,7 @@
                   href="#waitlist"
                   class="primary-gradient inline-flex min-h-[52px] items-center justify-center rounded-2xl px-8 py-4 text-base font-bold text-white shadow-ambient transition duration-200 hover:-translate-y-0.5 hover:shadow-float focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 >
-                  Cho tôi giữ chỗ
+                  Join Waitlist
                 </a>
                 <a
                   href="#showcase"
@@ -289,10 +303,10 @@
               </div>
 
               <div class="reveal space-y-4" style="transition-delay: 180ms">
-                <p class="text-sm text-body-soft">Không spam đâu. Tụi mình cũng ghét bị làm phiền.</p>
+                <p class="text-sm text-body-soft">Không spam. Không làm phiền. Chỉ tập trung giúp bạn nói tốt hơn.</p>
                 <div class="flex flex-wrap gap-3">
-                  <span class="rounded-full bg-surface px-4 py-2 text-sm font-semibold text-primary shadow-ambient">5 phút cũng học được</span>
-                  <span class="rounded-full bg-teal-soft/80 px-4 py-2 text-sm font-semibold text-primary shadow-ambient">Tình huống đời thật</span>
+                  <span class="rounded-full bg-surface px-4 py-2 text-sm font-semibold text-primary shadow-ambient">5 phút nhanh gọn</span>
+                  <span class="rounded-full bg-teal-soft/80 px-4 py-2 text-sm font-semibold text-primary shadow-ambient">Tình huống thực tế</span>
                   <span class="rounded-full bg-surface px-4 py-2 text-sm font-semibold text-primary shadow-ambient">Dành cho người ngại nói</span>
                 </div>
               </div>
@@ -303,9 +317,9 @@
               <div class="absolute -right-6 top-2 hidden h-48 w-48 rounded-full bg-primary-bright/20 blur-3xl sm:block"></div>
               <div class="absolute -left-4 bottom-8 h-32 w-32 rounded-full bg-teal-soft/35 blur-3xl"></div>
 
-              <div class="relative mx-auto max-w-md">
-                <div class="float-soft absolute -left-3 top-8 z-20 hidden rounded-full bg-teal-soft px-4 py-2 text-sm font-bold text-primary shadow-ambient sm:block">Hôm nay: 1 bài 5 phút</div>
-                <div class="float-soft absolute -right-4 top-24 z-20 hidden rounded-full bg-surface px-4 py-2 text-sm font-bold text-primary shadow-ambient sm:block" style="animation-delay: 1.1s">Tại quán cà phê</div>
+              <div class="relative mx-auto max-w-md pt-14">
+                <div class="float-soft absolute left-0 top-0 z-20 hidden rounded-full bg-teal-soft px-4 py-2 text-sm font-bold text-primary shadow-ambient sm:block">Hôm nay: 1 bài 5 phút</div>
+                <div class="float-soft absolute -right-6 top-16 z-20 hidden rounded-full bg-surface px-4 py-2 text-sm font-bold text-primary shadow-ambient sm:block" style="animation-delay: 1.1s">Tại quán cà phê</div>
                 <div class="float-soft absolute -bottom-5 left-6 z-20 rounded-full bg-gold-accent px-4 py-2 text-sm font-bold text-primary-strong shadow-ambient" style="animation-delay: 0.6s">Bạn vừa giữ streak 7 ngày</div>
 
                 <div class="rounded-[2.5rem] border border-white/70 bg-surface p-3 shadow-float">
@@ -327,7 +341,7 @@
                       </div>
                       <div class="space-y-2">
                         <p class="font-headline text-2xl font-black text-primary-strong">Tại quán cà phê</p>
-                        <p class="text-sm leading-6 text-body-soft">Gọi đồ uống và thanh toán theo cách tự nhiên hơn.</p>
+                        <p class="text-sm leading-6 text-body-soft">Thực hành gọi đồ uống và thanh toán theo cách tự nhiên hơn.</p>
                       </div>
                       <div class="flex flex-wrap gap-2 text-sm">
                         <span class="rounded-full bg-background px-3 py-2 font-semibold text-body-soft">15 phút</span>
@@ -363,48 +377,89 @@
       <!-- ════════ Soft Trust Bar ════════ -->
       <section class="px-4 py-6 sm:px-6 lg:px-8">
         <div class="reveal mx-auto max-w-7xl rounded-[2rem] bg-mint-soft px-6 py-6 shadow-ambient sm:px-8 editorial-grid">
-          <p class="mb-5 text-center font-headline text-xs font-bold uppercase tracking-[0.28em] text-primary/70">Không cần học quá nhiều mới bắt đầu được</p>
+          <p class="mb-5 text-center font-headline text-xs font-bold uppercase tracking-[0.28em] text-primary/70">Bạn không cần học quá nhiều để bắt đầu</p>
           <div class="grid gap-4 text-center sm:grid-cols-2 lg:grid-cols-4">
-            <div class="rounded-2xl bg-surface px-5 py-4 shadow-ambient"><p class="font-headline text-lg font-bold text-primary-strong">Học ngắn, dễ theo</p></div>
-            <div class="rounded-2xl bg-surface px-5 py-4 shadow-ambient"><p class="font-headline text-lg font-bold text-primary-strong">Tình huống quen thuộc</p></div>
-            <div class="rounded-2xl bg-surface px-5 py-4 shadow-ambient"><p class="font-headline text-lg font-bold text-primary-strong">Thiết kế cho người ngại mở miệng</p></div>
+            <div class="rounded-2xl bg-surface px-5 py-4 shadow-ambient"><p class="font-headline text-lg font-bold text-primary-strong">Học từng bước, tiến bộ mỗi ngày</p></div>
+            <div class="rounded-2xl bg-surface px-5 py-4 shadow-ambient"><p class="font-headline text-lg font-bold text-primary-strong">Tình huống quen thuộc, dễ áp dụng</p></div>
+            <div class="rounded-2xl bg-surface px-5 py-4 shadow-ambient"><p class="font-headline text-lg font-bold text-primary-strong">Thiết kế dành riêng cho người chưa tự tin khi nói</p></div>
             <div class="rounded-2xl bg-surface px-5 py-4 shadow-ambient"><p class="font-headline text-lg font-bold text-primary-strong">Không cần học lại từ đầu</p></div>
           </div>
         </div>
       </section>
 
       <!-- ════════ Pain Points ════════ -->
-      <section id="pain" class="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-        <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-          <div class="space-y-5">
+      <section id="pain" class="section-shell relative overflow-hidden px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <div class="editorial-grid relative mx-auto max-w-7xl rounded-[2.5rem] bg-background/60 px-6 py-12 sm:px-10 lg:px-16 lg:py-16">
+
+          <!-- Heading -->
+          <div class="mb-14 max-w-2xl space-y-4 reveal">
             <p class="font-headline text-sm font-bold uppercase tracking-[0.22em] text-primary/70">Pain mirror</p>
-            <h2 class="max-w-xl font-headline text-4xl font-black leading-tight text-primary-strong sm:text-5xl">Học rồi, nhớ rồi,<br />sao vẫn ngại nói?</h2>
-            <p class="max-w-xl text-lg leading-8 text-body-soft">
-              Bạn không phải người duy nhất bị kẹt ở đoạn này. Rất nhiều người học rồi, hiểu rồi, chỉ là tới lúc cần mở miệng thì mọi thứ đứng lại.
-            </p>
+            <h2 class="font-headline text-4xl font-black leading-tight text-primary-strong sm:text-5xl">Bạn đã học rồi… vậy điều gì đang <span class="relative inline-block"><span class="relative z-10">ngăn bạn lại?</span><span class="absolute inset-x-0 bottom-1 -z-0 h-3 rounded-sm bg-gold-accent/60"></span></span></h2>
+            <p class="max-w-xl text-lg leading-8 text-body-soft">Bạn không phải người duy nhất rơi vào trạng thái này. Rất nhiều người học tiếng Anh nhưng vẫn gặp khó khăn khi bắt đầu nói — không phải vì thiếu kiến thức, mà vì thiếu sự luyện tập đúng cách.</p>
           </div>
 
-          <div class="grid gap-5 sm:grid-cols-2">
-            <article class="reveal rounded-[1.75rem] bg-surface p-6 shadow-ambient sm:translate-y-8">
-              <div class="mb-5 h-10 w-1 rounded-full bg-primary-bright"></div>
-              <h3 class="font-headline text-2xl font-black text-primary-strong">Thuộc công thức từ lâu. Tới lúc cần dùng thì não tắt.</h3>
-              <p class="mt-3 leading-7 text-body-soft">Bạn mất quá nhiều thời gian để nghĩ cách nói, đến mức có khi cơ hội đã trôi qua rồi.</p>
-            </article>
-            <article class="reveal rounded-[1.75rem] bg-surface p-6 shadow-ambient">
-              <div class="mb-5 h-10 w-1 rounded-full bg-teal-soft"></div>
-              <h3 class="font-headline text-2xl font-black text-primary-strong">Trong đầu câu ổn lắm. Ra miệng thì... à... ừm...</h3>
-              <p class="mt-3 leading-7 text-body-soft">Bạn có nền, nhưng cái nền đó vẫn nằm trong đầu nhiều hơn nằm ở miệng.</p>
-            </article>
-            <article class="reveal rounded-[1.75rem] bg-surface p-6 shadow-ambient">
-              <div class="mb-5 h-10 w-1 rounded-full bg-gold-soft"></div>
-              <h3 class="font-headline text-2xl font-black text-primary-strong">Muốn giao tiếp tốt hơn thật. Chỉ là chưa tìm được cách luyện nào gần đời thật.</h3>
-              <p class="mt-3 leading-7 text-body-soft">Bạn muốn nói cho đúng hơn, rồi thành ra không nói nữa.</p>
-            </article>
-            <article class="reveal rounded-[1.75rem] bg-surface p-6 shadow-ambient sm:translate-y-8">
-              <div class="mb-5 h-10 w-1 rounded-full bg-primary"></div>
-              <h3 class="font-headline text-2xl font-black text-primary-strong">Bận quá nên học được vài hôm rồi đứt.</h3>
-              <p class="mt-3 leading-7 text-body-soft">Không phải bạn lười. Chỉ là cách học cũ không hợp với nhịp sống thật của bạn.</p>
-            </article>
+          <!-- Pain items — stacked rows -->
+          <div class="space-y-0">
+
+            <!-- Item 1 -->
+            <div class="reveal group grid grid-cols-[auto_1fr] items-start gap-6 py-8 sm:gap-10 sm:py-10 lg:grid-cols-[64px_1fr_auto] lg:gap-12">
+              <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-mint-soft text-primary shadow-ambient transition-transform duration-300 group-hover:scale-110">
+                <span class="material-symbols-outlined text-[28px]" style="font-variation-settings:'FILL' 1,'wght' 600">psychology</span>
+              </div>
+              <div class="min-w-0">
+                <h3 class="font-headline text-xl font-black text-primary-strong sm:text-2xl">Thuộc công thức, nhưng <span class="rounded-md bg-primary-bright/20 px-1.5 text-primary">không thể phát ra thành tiếng</span></h3>
+                <p class="mt-2 text-base leading-7 text-body-soft">Bạn biết mình muốn nói gì, nhưng khi cần lại mất vài giây để sắp xếp câu từ.</p>
+              </div>
+              <div class="hidden lg:flex lg:items-center lg:self-center">
+                <span class="rounded-full border border-outline-soft px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-body-soft/60">01</span>
+              </div>
+            </div>
+            <div class="h-px bg-outline-soft/60"></div>
+
+            <!-- Item 2 -->
+            <div class="reveal group grid grid-cols-[auto_1fr] items-start gap-6 py-8 sm:gap-10 sm:py-10 lg:grid-cols-[64px_1fr_auto] lg:gap-12" style="transition-delay: 80ms">
+              <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-mint-soft text-primary shadow-ambient transition-transform duration-300 group-hover:scale-110">
+                <span class="material-symbols-outlined text-[28px]" style="font-variation-settings:'FILL' 1,'wght' 600">record_voice_over</span>
+              </div>
+              <div class="min-w-0">
+                <h3 class="font-headline text-xl font-black text-primary-strong sm:text-2xl">Nghĩ thì ổn, nói thì <span class="rounded-md bg-teal-soft/50 px-1.5 text-primary-strong">ngập ngừng</span></h3>
+                <p class="mt-2 text-base leading-7 text-body-soft">Câu chữ rõ ràng trong đầu, nhưng khi nói ra lại thiếu tự nhiên.</p>
+              </div>
+              <div class="hidden lg:flex lg:items-center lg:self-center">
+                <span class="rounded-full border border-outline-soft px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-body-soft/60">02</span>
+              </div>
+            </div>
+            <div class="h-px bg-outline-soft/60"></div>
+
+            <!-- Item 3 -->
+            <div class="reveal group grid grid-cols-[auto_1fr] items-start gap-6 py-8 sm:gap-10 sm:py-10 lg:grid-cols-[64px_1fr_auto] lg:gap-12" style="transition-delay: 160ms">
+              <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-mint-soft text-primary shadow-ambient transition-transform duration-300 group-hover:scale-110">
+                <span class="material-symbols-outlined text-[28px]" style="font-variation-settings:'FILL' 1,'wght' 600">travel_explore</span>
+              </div>
+              <div class="min-w-0">
+                <h3 class="font-headline text-xl font-black text-primary-strong sm:text-2xl">Muốn giao tiếp tốt hơn, nhưng <span class="rounded-md bg-gold-accent/50 px-1.5 text-primary-strong">chưa tìm được cách luyện gần đời thật</span></h3>
+                <p class="mt-2 text-base leading-7 text-body-soft">Muốn nói đúng hơn, rồi thành ra không nói nữa.</p>
+              </div>
+              <div class="hidden lg:flex lg:items-center lg:self-center">
+                <span class="rounded-full border border-outline-soft px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-body-soft/60">03</span>
+              </div>
+            </div>
+            <div class="h-px bg-outline-soft/60"></div>
+
+            <!-- Item 4 -->
+            <div class="reveal group grid grid-cols-[auto_1fr] items-start gap-6 py-8 sm:gap-10 sm:py-10 lg:grid-cols-[64px_1fr_auto] lg:gap-12" style="transition-delay: 240ms">
+              <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-mint-soft text-primary shadow-ambient transition-transform duration-300 group-hover:scale-110">
+                <span class="material-symbols-outlined text-[28px]" style="font-variation-settings:'FILL' 1,'wght' 600">schedule</span>
+              </div>
+              <div class="min-w-0">
+                <h3 class="font-headline text-xl font-black text-primary-strong sm:text-2xl">Bận quá nên học được vài hôm <span class="rounded-md bg-surface-container px-1.5 text-primary-strong">rồi đứt</span></h3>
+                <p class="mt-2 text-base leading-7 text-body-soft">Cách học cũ không hợp với nhịp sống thật.</p>
+              </div>
+              <div class="hidden lg:flex lg:items-center lg:self-center">
+                <span class="rounded-full border border-outline-soft px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-body-soft/60">04</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -416,24 +471,23 @@
             <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
               <div class="rounded-[1.75rem] bg-mint-soft px-5 py-6">
                 <p class="font-headline text-4xl font-black text-primary">1 câu</p>
-                <p class="mt-2 text-sm leading-6 text-body-soft">mỗi ngày cũng đủ để cái miệng bắt đầu quen việc mở lời.</p>
+                <p class="mt-2 text-sm leading-6 text-body-soft">mỗi ngày đủ để hình thành phản xạ giao tiếp.</p>
               </div>
               <div class="rounded-[1.75rem] bg-mint-soft px-5 py-6">
                 <p class="font-headline text-4xl font-black text-primary">5 phút</p>
-                <p class="mt-2 text-sm leading-6 text-body-soft">vẫn tính là có học, nếu nó giúp bạn giữ được nhịp.</p>
+                <p class="mt-2 text-sm leading-6 text-body-soft">ngắn nhưng hiệu quả giúp duy trì đều.</p>
               </div>
               <div class="rounded-[1.75rem] bg-mint-soft px-5 py-6">
-                <p class="font-headline text-4xl font-black text-primary">Nói trước</p>
-                <p class="mt-2 text-sm leading-6 text-body-soft">mới là lúc sự tự tin bắt đầu nhúc nhích.</p>
+                <p class="font-headline text-4xl font-black text-primary">Nói thường xuyên</p>
+                <p class="mt-2 text-sm leading-6 text-body-soft">là cách nhanh nhất để xây dựng sự tự tin.</p>
               </div>
             </div>
 
             <div class="space-y-5">
               <p class="font-headline text-sm font-bold uppercase tracking-[0.22em] text-primary/70">Tin vui nhỏ</p>
               <h2 class="font-headline text-4xl font-black leading-tight text-primary-strong sm:text-5xl">Điều này bình thường hơn bạn nghĩ.</h2>
-              <p class="text-lg leading-8 text-body-soft">Rất nhiều người không yếu tiếng Anh. Họ chỉ thiếu một cách tập khiến mình <span class="rounded-lg bg-gold-accent px-2 py-0.5 font-bold text-primary-strong">dám nói thường xuyên hơn</span>.</p>
-              <p class="text-lg leading-8 text-body-soft">Bạn không cần sẵn sàng hoàn toàn mới được nói. Chính lúc bạn bắt đầu nói, sự tự tin mới lớn lên.</p>
-              <blockquote class="rounded-[1.75rem] border border-outline-soft bg-background px-6 py-5 font-headline text-2xl font-bold italic text-primary-strong">Bạn không dở. Bạn chỉ ít có dịp tập nói thôi.</blockquote>
+              <p class="text-lg leading-8 text-body-soft">Rất nhiều người không yếu tiếng Anh. Họ chỉ thiếu một môi trường luyện tập đủ đơn giản để <span class="rounded-lg bg-gold-accent px-2 py-0.5 font-bold text-primary-strong">duy trì mỗi ngày</span>.</p>
+              <blockquote class="rounded-[1.75rem] border border-outline-soft bg-background px-6 py-5 font-headline text-2xl font-bold italic text-primary-strong">"Bạn không kém. Bạn chỉ thiếu cơ hội để luyện nói thường xuyên."</blockquote>
             </div>
           </div>
         </div>
@@ -444,8 +498,8 @@
         <div class="mx-auto max-w-7xl space-y-10 editorial-grid rounded-[2rem] px-6 py-8 sm:px-8">
           <div class="max-w-3xl space-y-5">
             <p class="font-headline text-sm font-bold uppercase tracking-[0.22em] text-primary/70">How Billy helps</p>
-            <h2 class="font-headline text-4xl font-black leading-tight text-primary-strong sm:text-5xl">Cách Billy cùng bạn tập.</h2>
-            <p class="text-lg leading-8 text-body-soft">Mỗi ngày một chút. Mỗi lần một tình huống quen. Để việc luyện nói dễ bắt đầu hơn, và dễ duy trì hơn.</p>
+            <h2 class="font-headline text-4xl font-black leading-tight text-primary-strong sm:text-5xl">Cách Billy đồng hành cùng bạn.</h2>
+            <p class="text-lg leading-8 text-body-soft">Mỗi ngày một chút. Mỗi lần một tình huống quen thuộc. Giúp việc luyện nói trở nên tự nhiên và dễ bắt đầu hơn.</p>
           </div>
 
           <div class="grid gap-5 lg:grid-cols-4">
@@ -457,22 +511,22 @@
             <article class="reveal rounded-[1.9rem] bg-surface px-6 py-8 shadow-ambient" style="transition-delay: 70ms">
               <div class="mb-5 text-6xl font-black leading-none text-primary/10">02</div>
               <h3 class="font-headline text-2xl font-black text-primary-strong">Nghe, nói, phản xạ</h3>
-              <p class="mt-3 leading-7 text-body-soft">Billy đưa ra câu hỏi, bạn thu âm câu trả lời theo cách tự nhiên nhất.</p>
+              <p class="mt-3 leading-7 text-body-soft">Billy đưa ra câu hỏi, bạn trả lời bằng giọng nói theo cách tự nhiên nhất.</p>
             </article>
             <article class="reveal rounded-[1.9rem] bg-surface px-6 py-8 shadow-ambient" style="transition-delay: 140ms">
               <div class="mb-5 text-6xl font-black leading-none text-primary/10">03</div>
               <h3 class="font-headline text-2xl font-black text-primary-strong">Ôn lại đúng lúc</h3>
-              <p class="mt-3 leading-7 text-body-soft">Thuật toán lặp lại ngắt quãng giúp bạn không quên những gì vừa nói.</p>
+              <p class="mt-3 leading-7 text-body-soft">Hệ thống nhắc lại thông minh giúp bạn ghi nhớ mà không bị quá tải.</p>
             </article>
             <article class="reveal rounded-[1.9rem] bg-surface px-6 py-8 shadow-ambient" style="transition-delay: 210ms">
               <div class="mb-5 text-6xl font-black leading-none text-primary/10">04</div>
-              <h3 class="font-headline text-2xl font-black text-primary-strong">Thay mình mỗi ngày</h3>
-              <p class="mt-3 leading-7 text-body-soft">Từng chút một, cảm giác run rẩy khi mở miệng sẽ biến mất.</p>
+              <h3 class="font-headline text-2xl font-black text-primary-strong">Cải thiện mỗi ngày</h3>
+              <p class="mt-3 leading-7 text-body-soft">Từng bước nhỏ giúp bạn dần nói trôi chảy và tự tin hơn.</p>
             </article>
           </div>
 
           <div class="reveal rounded-[2rem] bg-mint-soft px-6 py-8 sm:px-8">
-            <blockquote class="max-w-4xl font-headline text-3xl font-black italic leading-tight text-primary sm:text-4xl">"Bạn không thiếu kiến thức. Bạn thiếu chỗ để mở miệng thường xuyên."</blockquote>
+            <blockquote class="max-w-4xl font-headline text-3xl font-black italic leading-tight text-primary sm:text-4xl">"Bạn không thiếu kiến thức. Bạn chỉ cần bắt đầu nói."</blockquote>
             <p class="mt-3 text-lg text-body-soft">Và đó là chỗ Billy bước vào.</p>
           </div>
         </div>
@@ -488,8 +542,8 @@
               <!-- Text -->
               <div class="relative z-10 flex w-1/2 flex-col justify-center p-8 md:p-12">
                 <span class="mb-4 inline-block self-start rounded-full bg-primary px-3 py-1 text-xs font-bold uppercase tracking-widest text-white">Mới nhất</span>
-                <h3 class="font-headline text-2xl font-black text-primary-strong sm:text-3xl">Học ngay: Tại quán cafe</h3>
-                <p class="mt-3 text-base text-body-soft/80">Tập cách hỏi menu và thanh toán mà không cần 'body language'.</p>
+                <h3 class="font-headline text-2xl font-black text-primary-strong sm:text-3xl">Tự tin gọi đồ tại quán cà phê</h3>
+                <p class="mt-3 text-base text-body-soft/80">Tập cách hỏi menu và thanh toán theo cách tự nhiên, thoải mái hơn.</p>
                 <button class="mt-6 self-start rounded-full bg-white px-6 py-3 font-bold text-primary shadow-ambient transition hover:-translate-y-0.5 hover:shadow-float active:scale-95">Thử ngay</button>
               </div>
               <!-- Cafe image -->
@@ -502,7 +556,7 @@
             <div class="reveal group flex flex-col justify-between rounded-[2rem] bg-surface-container-high p-8 shadow-ambient md:col-span-4 md:p-10" style="transition-delay: 70ms">
               <div>
                 <h3 class="font-headline text-3xl font-black text-primary-strong">Ôn nhanh 5 phút</h3>
-                <p class="mt-3 text-body-soft">Tranh thủ lúc đợi xe bus hoặc giờ nghỉ trưa.</p>
+                <p class="mt-3 text-body-soft">Phù hợp cả khi bạn đang bận rộn.</p>
               </div>
               <div class="flex justify-center py-8">
                 <div class="flex h-24 w-24 cursor-pointer items-center justify-center rounded-full bg-primary shadow-float transition hover:scale-110 active:scale-95">
@@ -515,7 +569,7 @@
             <div class="reveal flex flex-col justify-between rounded-[2rem] bg-surface-container-highest p-8 shadow-ambient md:col-span-5 md:p-10" style="transition-delay: 140ms">
               <div>
                 <h3 class="font-headline text-3xl font-black text-primary-strong">Billy sửa bài</h3>
-                <p class="mt-3 text-body-soft">Không chỉ đúng hay sai, Billy gợi ý cách nói tự nhiên hơn.</p>
+                <p class="mt-3 text-body-soft">Gợi ý cách nói tự nhiên hơn. Ví dụ: Thay "I want to drink a coffee" bằng "Can I get a latte, please?".</p>
               </div>
               <div class="mt-6 space-y-4 rounded-[1.4rem] bg-white/80 p-5 shadow-botanical">
                 <div>
@@ -546,26 +600,26 @@
       <!-- ════════ Transformation ════════ -->
       <section class="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div class="mx-auto max-w-7xl text-center editorial-grid rounded-[2rem] px-6 py-12 sm:px-8">
-          <h2 class="reveal mx-auto max-w-4xl font-headline text-4xl font-black text-primary-strong sm:text-5xl lg:text-6xl">Một thời gian nữa, bạn sẽ khác ở những lúc rất nhỏ.</h2>
+          <h2 class="reveal mx-auto max-w-4xl font-headline text-4xl font-black text-primary-strong sm:text-5xl lg:text-6xl">Những thay đổi nhỏ, tạo nên sự khác biệt lớn</h2>
 
           <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3 md:gap-12">
             <div class="reveal space-y-5">
               <div class="aspect-video overflow-hidden rounded-[1.75rem] bg-surface-dim">
                 <img src="images/menu-hands.png" alt="Tay cầm menu tại nhà hàng" class="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0" />
               </div>
-              <h4 class="font-headline text-2xl font-bold italic text-primary-strong">"Gọi món đỡ lúng túng"</h4>
+              <h4 class="font-headline text-2xl font-bold italic text-primary-strong">"Tự tin gọi món hơn"</h4>
             </div>
             <div class="reveal space-y-5 sm:translate-y-8" style="transition-delay: 70ms">
               <div class="aspect-video overflow-hidden rounded-[1.75rem] bg-surface-dim">
                 <img src="images/asking-directions.png" alt="Người trẻ hỏi đường trên phố" class="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0" />
               </div>
-              <h4 class="font-headline text-2xl font-bold italic text-primary-strong">"Hỏi đường bình tĩnh hơn"</h4>
+              <h4 class="font-headline text-2xl font-bold italic text-primary-strong">"Bình tĩnh hỏi đường hơn"</h4>
             </div>
             <div class="reveal space-y-5" style="transition-delay: 140ms">
               <div class="aspect-video overflow-hidden rounded-[1.75rem] bg-surface-dim">
                 <img src="images/group-chatting.png" alt="Nhóm bạn trẻ trò chuyện vui vẻ" class="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0" />
               </div>
-              <h4 class="font-headline text-2xl font-bold italic text-primary-strong">"Không chỉ cười rồi im lặng"</h4>
+              <h4 class="font-headline text-2xl font-bold italic text-primary-strong">"Chủ động tham gia hội thoại thay vì im lặng"</h4>
             </div>
           </div>
         </div>
@@ -577,14 +631,14 @@
           <div class="flex-1">
             <h2 class="font-headline text-4xl font-black text-primary-strong">Bạn có thấy mình ở đây?</h2>
             <div class="mt-8 flex flex-wrap gap-3">
-              <span class="cursor-default rounded-full bg-white px-6 py-3 font-bold text-primary shadow-ambient transition hover:bg-primary hover:text-white">Học rồi mà khựng</span>
-              <span class="cursor-default rounded-full bg-white px-6 py-3 font-bold text-primary shadow-ambient transition hover:bg-primary hover:text-white">Ngại giao tiếp</span>
-              <span class="cursor-default rounded-full bg-white px-6 py-3 font-bold text-primary shadow-ambient transition hover:bg-primary hover:text-white">Bận rộn</span>
-              <span class="cursor-default rounded-full bg-white px-6 py-3 font-bold text-primary shadow-ambient transition hover:bg-primary hover:text-white">Người lớn tuổi</span>
+              <span class="cursor-default rounded-full bg-white px-6 py-3 font-bold text-primary shadow-ambient transition hover:bg-primary hover:text-white">Người học mất gốc hoặc thiếu tự tin</span>
+              <span class="cursor-default rounded-full bg-white px-6 py-3 font-bold text-primary shadow-ambient transition hover:bg-primary hover:text-white">Người e dè khi giao tiếp</span>
+              <span class="cursor-default rounded-full bg-white px-6 py-3 font-bold text-primary shadow-ambient transition hover:bg-primary hover:text-white">Người bận rộn, khó duy trì việc học</span>
+              <span class="cursor-default rounded-full bg-white px-6 py-3 font-bold text-primary shadow-ambient transition hover:bg-primary hover:text-white">Người lớn tuổi cần phương pháp đơn giản</span>
             </div>
           </div>
           <div class="mt-8 flex-1 text-xl italic leading-relaxed text-body-soft md:mt-0">
-            "Chúng tôi không dạy bạn trở thành giáo sư. Chúng tôi giúp bạn trở thành người dám nói tiếng Anh để phục vụ chính cuộc sống của mình."
+            "Chúng tôi không đào tạo bạn trở thành chuyên gia. Chúng tôi giúp bạn tự tin sử dụng tiếng Anh trong cuộc sống hằng ngày."
           </div>
         </div>
       </section>
@@ -592,46 +646,46 @@
       <!-- ════════ FAQ ════════ -->
       <section id="faq" class="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div class="mx-auto max-w-4xl editorial-grid rounded-[2rem] px-6 py-8 sm:px-8">
-          <h2 class="reveal mb-12 text-center font-headline text-4xl font-black text-primary-strong sm:text-5xl">Những điều bạn thường băn khoăn</h2>
+          <h2 class="reveal mb-12 text-center font-headline text-4xl font-black text-primary-strong sm:text-5xl">Câu hỏi thường gặp</h2>
 
           <div class="space-y-4" id="faq-list">
             <div class="faq-item rounded-[1.75rem] bg-surface shadow-ambient" data-open="false">
               <button class="flex w-full items-center justify-between p-6 text-left sm:p-8" aria-expanded="false">
-                <span class="font-headline text-lg font-bold text-primary-strong sm:text-xl">Tôi rất nhát, sợ Billy chê</span>
+                <span class="font-headline text-lg font-bold text-primary-strong sm:text-xl">Tôi rất ngại, liệu có phù hợp không?</span>
                 <span class="material-symbols-outlined faq-icon ml-4 flex-shrink-0 text-primary">expand_more</span>
               </button>
               <div class="faq-panel">
-                <div><p class="px-6 pb-6 leading-relaxed text-body-soft sm:px-8 sm:pb-8">Billy được thiết kế để làm người đồng hành, không phải giám khảo. Mọi góp ý đều mang tính khích lệ và bí mật. Không ai nghe thấy bạn nói ngoài Billy.</p></div>
+                <div><p class="px-6 pb-6 leading-relaxed text-body-soft sm:px-8 sm:pb-8">Billy được thiết kế như một người đồng hành, không đánh giá. Bạn có thể luyện tập riêng tư, không áp lực.</p></div>
               </div>
             </div>
 
             <div class="faq-item rounded-[1.75rem] bg-surface shadow-ambient" data-open="false">
               <button class="flex w-full items-center justify-between p-6 text-left sm:p-8" aria-expanded="false">
-                <span class="font-headline text-lg font-bold text-primary-strong sm:text-xl">Lịch trình của tôi rất bận</span>
+                <span class="font-headline text-lg font-bold text-primary-strong sm:text-xl">Tôi không có nhiều thời gian?</span>
                 <span class="material-symbols-outlined faq-icon ml-4 flex-shrink-0 text-primary">expand_more</span>
               </button>
               <div class="faq-panel">
-                <div><p class="px-6 pb-6 leading-relaxed text-body-soft sm:px-8 sm:pb-8">Mỗi bài tập chỉ kéo dài 5-10 phút. Bạn có thể tập bất cứ khi nào có điện thoại trong tay.</p></div>
+                <div><p class="px-6 pb-6 leading-relaxed text-body-soft sm:px-8 sm:pb-8">Mỗi bài chỉ 5–10 phút. Bạn có thể luyện tập bất cứ lúc nào.</p></div>
               </div>
             </div>
 
             <div class="faq-item rounded-[1.75rem] bg-surface shadow-ambient" data-open="false">
               <button class="flex w-full items-center justify-between p-6 text-left sm:p-8" aria-expanded="false">
-                <span class="font-headline text-lg font-bold text-primary-strong sm:text-xl">Người lớn tuổi có học được không?</span>
+                <span class="font-headline text-lg font-bold text-primary-strong sm:text-xl">Người lớn tuổi có dùng được không?</span>
                 <span class="material-symbols-outlined faq-icon ml-4 flex-shrink-0 text-primary">expand_more</span>
               </button>
               <div class="faq-panel">
-                <div><p class="px-6 pb-6 leading-relaxed text-body-soft sm:px-8 sm:pb-8">Giao diện của EasyBilly cực kỳ tối giản và trực quan. Chữ to, rõ ràng và không có những tính năng gây nhiễu.</p></div>
+                <div><p class="px-6 pb-6 leading-relaxed text-body-soft sm:px-8 sm:pb-8">Giao diện đơn giản, trực quan, dễ sử dụng cho mọi độ tuổi.</p></div>
               </div>
             </div>
 
             <div class="faq-item rounded-[1.75rem] bg-surface shadow-ambient" data-open="false">
               <button class="flex w-full items-center justify-between p-6 text-left sm:p-8" aria-expanded="false">
-                <span class="font-headline text-lg font-bold text-primary-strong sm:text-xl">Khi nào thì EasyBilly ra mắt?</span>
+                <span class="font-headline text-lg font-bold text-primary-strong sm:text-xl">Khi nào EasyBilly ra mắt?</span>
                 <span class="material-symbols-outlined faq-icon ml-4 flex-shrink-0 text-primary">expand_more</span>
               </button>
               <div class="faq-panel">
-                <div><p class="px-6 pb-6 leading-relaxed text-body-soft sm:px-8 sm:pb-8">Chúng tôi đang trong giai đoạn hoàn thiện cuối cùng. Nếu bạn để lại thông tin trong danh sách chờ, bạn sẽ là những người đầu tiên được trải nghiệm bản Beta.</p></div>
+                <div><p class="px-6 pb-6 leading-relaxed text-body-soft sm:px-8 sm:pb-8">Sản phẩm đang trong giai đoạn hoàn thiện. Bạn có thể đăng ký để trải nghiệm bản Beta sớm nhất.</p></div>
               </div>
             </div>
           </div>
@@ -642,7 +696,7 @@
       <section id="waitlist" class="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div class="relative mx-auto max-w-7xl overflow-hidden rounded-[3rem] bg-primary p-10 text-center text-white shadow-float sm:p-16 md:rounded-[4rem] md:p-24 lg:p-32">
           <div class="relative z-10 mx-auto max-w-3xl space-y-10">
-            <h2 class="font-headline text-3xl font-black leading-tight sm:text-4xl md:text-5xl lg:text-7xl">Nếu bạn cũng muốn đỡ ngại hơn từng chút một, vào danh sách chờ nhé.</h2>
+            <h2 class="font-headline text-3xl font-black leading-tight sm:text-4xl md:text-5xl lg:text-7xl">Nếu bạn muốn tự tin hơn khi giao tiếp, hãy bắt đầu từ hôm nay.</h2>
 
             <!-- Waitlist form — ĐỔI xbdznkwa thành ID từ formspree.io -->
             <form id="waitlist-form" class="mx-auto flex max-w-lg flex-col gap-4 sm:flex-row" action="https://formspree.io/f/xbdznkwa" method="POST">
@@ -660,7 +714,7 @@
                 id="waitlist-btn"
                 class="min-h-[52px] rounded-2xl bg-gold-accent px-8 py-3 text-lg font-bold text-primary-strong shadow-float transition hover:scale-105 active:scale-95"
               >
-                Cho tôi giữ chỗ
+                Đăng ký trải nghiệm
               </button>
             </form>
             <p id="waitlist-msg" class="hidden text-lg font-semibold text-gold-accent"></p>
@@ -810,7 +864,7 @@
             errorMsg.classList.remove("hidden");
             errorMsg.textContent = "Có lỗi xảy ra. Vui lòng thử lại sau.";
             submitBtn.disabled = false;
-            submitBtn.textContent = "Cho tôi giữ chỗ";
+            submitBtn.textContent = "Đăng ký trải nghiệm";
           }
         });
 
@@ -822,6 +876,19 @@
               e.preventDefault();
               target.scrollIntoView({ behavior: "smooth", block: "start" });
             }
+          });
+        });
+
+        // ── Editorial Grid Spotlight (Canva-style) ──
+        document.querySelectorAll(".editorial-grid").forEach((el) => {
+          el.addEventListener("mousemove", (e) => {
+            const rect = el.getBoundingClientRect();
+            el.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
+            el.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
+          }, { passive: true });
+          el.addEventListener("mouseleave", () => {
+            el.style.setProperty("--mouse-x", "-9999px");
+            el.style.setProperty("--mouse-y", "-9999px");
           });
         });
       })();
